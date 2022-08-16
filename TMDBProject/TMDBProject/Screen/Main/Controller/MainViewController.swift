@@ -8,6 +8,7 @@
 import UIKit
 
 import Kingfisher
+import SokyteUIFramework
 
 final class MainViewController: UIViewController {
 
