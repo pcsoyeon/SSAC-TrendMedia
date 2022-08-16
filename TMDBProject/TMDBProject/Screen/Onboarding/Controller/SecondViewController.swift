@@ -30,16 +30,16 @@ class SecondViewController: UIViewController {
         view.backgroundColor = .black
         configureLabel()
         configureImageView()
+        configureButton()
     }
     
     private func configureLabel() {
-        titleLabel.text = "트렌드를 한눈에"
+        titleLabel.text = "영화/드라마/예능 모든 정보를!"
         titleLabel.textColor = .white
         
         descriptionLabel.text = """
-                                최근 유행하는 예능이 무엇일까요?
-                                요즘 영화관에서 사람들이 많이 찾는 영화는 무엇일까요?
-                                트렌드 미디어 정보를 한눈에 알아보아요!
+                                영화, 드라마 뿐만 아니라 예능까지
+                                모든 미디어 정보를 확인할 수 있어요
                                 """
         descriptionLabel.textColor = .white
     }
@@ -49,7 +49,19 @@ class SecondViewController: UIViewController {
     }
     
     private func configureButton() {
+        skipButton.setTitle("넘기기", for: .normal)
+        skipButton.setTitleColor(.white, for: .normal)
         
+        skipButton.layer.cornerRadius = 10
+        skipButton.clipsToBounds = true
+        skipButton.backgroundColor = .orange
+        
+        nextButton.setTitle("다음", for: .normal)
+        nextButton.setTitleColor(.white, for: .normal)
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
+        nextButton.backgroundColor = .systemMint
     }
     
     // MARK: - IBAction

@@ -34,6 +34,7 @@ final class FirstViewController: UIViewController {
         view.backgroundColor = .black
         configureLabel()
         configureImageView()
+        configureButton()
     }
     
     private func configureLabel() {
@@ -53,7 +54,19 @@ final class FirstViewController: UIViewController {
     }
     
     private func configureButton() {
+        skipButton.setTitle("넘기기", for: .normal)
+        skipButton.setTitleColor(.white, for: .normal)
         
+        skipButton.layer.cornerRadius = 10
+        skipButton.clipsToBounds = true
+        skipButton.backgroundColor = .orange
+        
+        nextButton.setTitle("다음", for: .normal)
+        nextButton.setTitleColor(.white, for: .normal)
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
+        nextButton.backgroundColor = .systemMint
     }
     
     // MARK: - IBAction

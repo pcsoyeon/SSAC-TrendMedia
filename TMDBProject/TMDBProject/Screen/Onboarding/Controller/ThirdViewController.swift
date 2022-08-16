@@ -30,16 +30,17 @@ class ThirdViewController: UIViewController {
         view.backgroundColor = .black
         configureLabel()
         configureImageView()
+        configureButton()
     }
     
     private func configureLabel() {
-        titleLabel.text = "트렌드를 한눈에"
+        titleLabel.text = "미디어의 자세한 정보까지!"
         titleLabel.textColor = .white
         
         descriptionLabel.text = """
-                                최근 유행하는 예능이 무엇일까요?
-                                요즘 영화관에서 사람들이 많이 찾는 영화는 무엇일까요?
-                                트렌드 미디어 정보를 한눈에 알아보아요!
+                                각 미디어는 누가 연출했을까요?
+                                어떤 사람이 연기했을까요?
+                                모든 정보를 알아볼 수 있어요!
                                 """
         descriptionLabel.textColor = .white
     }
@@ -49,7 +50,19 @@ class ThirdViewController: UIViewController {
     }
     
     private func configureButton() {
+        skipButton.setTitle("넘기기", for: .normal)
+        skipButton.setTitleColor(.white, for: .normal)
         
+        skipButton.layer.cornerRadius = 10
+        skipButton.clipsToBounds = true
+        skipButton.backgroundColor = .orange
+        
+        nextButton.setTitle("다음", for: .normal)
+        nextButton.setTitleColor(.white, for: .normal)
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
+        nextButton.backgroundColor = .systemMint
     }
     
     // MARK: - IBAction
