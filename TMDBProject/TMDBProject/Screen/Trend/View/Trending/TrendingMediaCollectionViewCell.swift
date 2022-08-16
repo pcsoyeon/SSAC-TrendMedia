@@ -7,7 +7,7 @@
 
 import UIKit
 
-import SokyteUIFramework
+import TMDBFramework
 
 protocol TrendingMediaCollectionViewCellDelegate: TrendingMediaViewController {
     func touchUpClipButton()

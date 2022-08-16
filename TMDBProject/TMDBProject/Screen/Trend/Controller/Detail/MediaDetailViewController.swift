@@ -9,7 +9,7 @@ import UIKit
 
 import Alamofire
 import SwiftyJSON
-import SokyteUIFramework
+import TMDBFramework
 
 enum MediaDetailSection: String {
     case overview = "OverView"

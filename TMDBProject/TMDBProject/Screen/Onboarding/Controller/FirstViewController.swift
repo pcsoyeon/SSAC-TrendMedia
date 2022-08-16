@@ -7,7 +7,7 @@
 
 import UIKit
 
-import SokyteUIFramework
+import TMDBFramework
 
 final class FirstViewController: UIViewController {
     

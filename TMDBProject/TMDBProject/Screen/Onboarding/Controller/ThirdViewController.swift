@@ -59,10 +59,6 @@ class ThirdViewController: UIViewController {
     
     // MARK: - IBAction
     
-    @IBAction func touchUpSkipButton(_ sender: UIButton) {
-        
-    }
-    
     @IBAction func touchUpNextButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: Constant.Storyboard.Main, bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: MainViewController.reuseIdentifier) as? MainViewController else { return }

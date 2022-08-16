@@ -8,7 +8,7 @@
 import UIKit
 
 import Kingfisher
-import SokyteUIFramework
+import TMDBFramework
 
 final class MainViewController: UIViewController {
 
@@ -34,6 +34,7 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         callRequest()
+        setUserDefaults()
     }
     
     // MARK: - Custom Method
@@ -68,6 +69,10 @@ final class MainViewController: UIViewController {
         TMDBMovieAPIManager.shared.fetchMovieDetail(movieId: 361743) { [weak self] value in
             self?.movieHeaderView.setData(title: value.title, imageName: value.backdropPath, genre: value.genre)
         }
+    }
+    
+    private func setUserDefaults() {
+        UserDefaults.standard.set(true, forKey: Constant.UserDefaults.First)
     }
 }
 
