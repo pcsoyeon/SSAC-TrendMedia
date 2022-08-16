@@ -14,7 +14,6 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
     // MARK: - Life Cycle
@@ -50,13 +49,6 @@ class ThirdViewController: UIViewController {
     }
     
     private func configureButton() {
-        skipButton.setTitle("넘기기", for: .normal)
-        skipButton.setTitleColor(.white, for: .normal)
-        
-        skipButton.layer.cornerRadius = 10
-        skipButton.clipsToBounds = true
-        skipButton.backgroundColor = .orange
-        
         nextButton.setTitle("다음", for: .normal)
         nextButton.setTitleColor(.white, for: .normal)
         
@@ -72,6 +64,10 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func touchUpNextButton(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard(name: Constant.Storyboard.Main, bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: MainViewController.reuseIdentifier) as? MainViewController else { return }
+        viewController.modalTransitionStyle = .crossDissolve
+        viewController.modalPresentationStyle = .overFullScreen
+        present(viewController, animated: true)
     }
 }

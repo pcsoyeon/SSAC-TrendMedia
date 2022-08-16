@@ -197,49 +197,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="08g-il-J2R">
-                                <rect key="frame" x="80" y="781" width="254" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJx-Wx-hF9">
-                                        <rect key="frame" x="0.0" y="0.0" width="123" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="touchUpSkipButton:" destination="LXB-4F-cJ6" eventType="touchUpInside" id="C7R-Xk-yCA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-cL-fJE">
-                                        <rect key="frame" x="131" y="0.0" width="123" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="touchUpNextButton:" destination="LXB-4F-cJ6" eventType="touchUpInside" id="MSx-ye-cZS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-cL-fJE">
+                                <rect key="frame" x="120" y="781" width="174" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="touchUpNextButton:" destination="LXB-4F-cJ6" eventType="touchUpInside" id="MSx-ye-cZS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gm4-oE-953"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ebU-x1-S0f" firstAttribute="centerX" secondItem="Gm4-oE-953" secondAttribute="centerX" id="2Ib-jm-O8k"/>
                             <constraint firstItem="2pr-1S-u1B" firstAttribute="leading" secondItem="Gm4-oE-953" secondAttribute="leading" constant="25" id="4fW-an-O24"/>
-                            <constraint firstItem="08g-il-J2R" firstAttribute="leading" secondItem="Gm4-oE-953" secondAttribute="leading" constant="80" id="G00-dX-vwj"/>
                             <constraint firstItem="Gm4-oE-953" firstAttribute="trailing" secondItem="2pr-1S-u1B" secondAttribute="trailing" constant="25" id="GNZ-xa-k5V"/>
-                            <constraint firstItem="Gm4-oE-953" firstAttribute="trailing" secondItem="08g-il-J2R" secondAttribute="trailing" constant="80" id="IQQ-vh-hrH"/>
                             <constraint firstItem="ebU-x1-S0f" firstAttribute="top" secondItem="Gm4-oE-953" secondAttribute="top" constant="100" id="LYa-fJ-SEJ"/>
-                            <constraint firstItem="Gm4-oE-953" firstAttribute="bottom" secondItem="08g-il-J2R" secondAttribute="bottom" constant="50" id="WbM-l2-KB0"/>
+                            <constraint firstItem="6zJ-cL-fJE" firstAttribute="leading" secondItem="Gm4-oE-953" secondAttribute="leading" constant="120" id="Lax-LW-SIe"/>
+                            <constraint firstItem="Gm4-oE-953" firstAttribute="trailing" secondItem="6zJ-cL-fJE" secondAttribute="trailing" constant="120" id="Mr1-5R-WiE"/>
                             <constraint firstItem="2pr-1S-u1B" firstAttribute="top" secondItem="AQf-kU-DAr" secondAttribute="bottom" constant="25" id="ZG7-Hu-OJY"/>
                             <constraint firstItem="Gm4-oE-953" firstAttribute="trailing" secondItem="AQf-kU-DAr" secondAttribute="trailing" constant="25" id="cqY-KI-jeT"/>
                             <constraint firstItem="AQf-kU-DAr" firstAttribute="leading" secondItem="Gm4-oE-953" secondAttribute="leading" constant="25" id="crK-gY-jJf"/>
                             <constraint firstItem="AQf-kU-DAr" firstAttribute="top" secondItem="ebU-x1-S0f" secondAttribute="bottom" constant="50" id="dHC-Rt-ync"/>
+                            <constraint firstItem="Gm4-oE-953" firstAttribute="bottom" secondItem="6zJ-cL-fJE" secondAttribute="bottom" constant="50" id="ngn-mN-Thu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="2pr-1S-u1B" id="VLj-ud-0rg"/>
                         <outlet property="imageView" destination="ebU-x1-S0f" id="rfX-lG-G3l"/>
                         <outlet property="nextButton" destination="6zJ-cL-fJE" id="Upc-5N-W5e"/>
-                        <outlet property="skipButton" destination="gJx-Wx-hF9" id="ciT-hU-t9d"/>
                         <outlet property="titleLabel" destination="AQf-kU-DAr" id="euh-7w-rxa"/>
                     </connections>
                 </viewController>
