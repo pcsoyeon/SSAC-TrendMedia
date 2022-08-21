@@ -68,6 +68,7 @@
 		92B11C9B28ABE05E00A22509 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B11C9A28ABE05E00A22509 /* Constant.swift */; };
 		92B11C9D28ABE07400A22509 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B11C9C28ABE07400A22509 /* UserDefaults.swift */; };
 		92B11C9F28ABE12A00A22509 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B11C9E28ABE12A00A22509 /* Storyboard.swift */; };
+		92EA678F28B1F3160097D517 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA678E28B1F3160097D517 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		92B11C9A28ABE05E00A22509 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		92B11C9C28ABE07400A22509 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		92B11C9E28ABE12A00A22509 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		92EA678E28B1F3160097D517 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +527,7 @@
 				92AC0D85289ABA31001A3757 /* Date+Extension.swift */,
 				927EF5E2289ACB0000C83A0F /* UIImageView+Extension.swift */,
 				927AFD6228A12B1600A8BBEB /* URL+Extension.swift */,
+				92EA678E28B1F3160097D517 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 				929055B228A272EE007E33A6 /* MainHeaderView.swift in Sources */,
 				927AFD5D28A11EBD00A8BBEB /* VideoWebViewController.swift in Sources */,
 				929055A228A25716007E33A6 /* MainTableViewCell.swift in Sources */,
+				92EA678F28B1F3160097D517 /* UIViewController+Extension.swift in Sources */,
 				927A8AF928A3CA830029892F /* MovieResponse.swift in Sources */,
 				92B11C9D28ABE07400A22509 /* UserDefaults.swift in Sources */,
 				927A8B0028A475AB0029892F /* MovieDetailResponse.swift in Sources */,
